@@ -36,7 +36,7 @@
 
         <div id="adContainer" style="display:none;position: absolute;top:0px;left: 0px;width:100%;height:100%;z-index:999;"></div>
         <div id="loadingText" style="width:100%;display: none;text-align:center;position:absolute;top:45%;z-index:2;font-size:20px;color:#CFAC6A">
-            운전자보험은 캐롯...0%
+            귀여운 쫑이게임...0%
         </div>
 
         <div id="splash">
@@ -70,7 +70,7 @@
             judgeLanTitle();
 
             function judgeLanTitle() {
-                document.title = "운전자보험은 캐롯";
+                document.title = "소의X쫑";
             }
 
             var loadintT = document.getElementById("loadingText");
@@ -108,7 +108,7 @@
                     if (!loadintT) {
                         return;
                     }
-                    loadintT.innerHTML = '운전자보험은 캐롯...' + parseInt(tempSeconds) + '%';
+                    loadintT.innerHTML = '귀여운 쫑이게임...' + parseInt(tempSeconds) + '%';
 
                     switch (tempSeconds) {
                         case 20:
@@ -141,7 +141,7 @@
                     if (tempSeconds > 100) {
                         clearInterval(timer);
                         tempSeconds = 100
-                        loadintT.innerHTML = '운전자보험은 캐롯...' + parseInt(tempSeconds) + '%';
+                        loadintT.innerHTML = '귀여운 쫑이게임...' + parseInt(tempSeconds) + '%';
                     }
                 }, t * 1000);
             }
